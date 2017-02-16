@@ -13,8 +13,8 @@
             </div>
             <div>
                 <ul class="nav navbar-nav">
-                    <li><a href="GERAR_EXTRATO_PHP_FAZER_ESSE_ARQUIVO.php">Extrato</a></li>
-                    <li><a href="GERAR_CADASTRO_PHP_FAZER_ESSE_ARQUIVO.php">Cadastrar</a></li>
+                    <li><a href="">Extrato</a></li>
+                    <li><a href="cadastra_formulario.php">Cadastrar</a></li>
                     <li><a href="GERAR_SIMULADOR_PHP_FAZER_ESSE_ARQUIVO.php">Simulador</a></li>
                     <li><a href="GERAR_ANIVERSARIANTES_MES_PHP_FAZER_ESSE_ARQUIVO.php">Aniversariantes do Mês</a></li>
                 </ul>
