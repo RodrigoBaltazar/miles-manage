@@ -12,7 +12,8 @@ cep VARCHAR(9),
 cidade VARCHAR(64),
 telefone VARCHAR(64),
 celular VARCHAR(64),
-saldo INT(10) NOT NULL DEFAULT 0
+saldo INT(10) NOT NULL DEFAULT 0,
+email VARCHAR(64)
 );
 
 
