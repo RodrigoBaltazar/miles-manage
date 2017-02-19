@@ -58,6 +58,10 @@
 				<td><input type="text" class="form-control" name="nascimento" ></td>
 		</tr>
 		<tr>
+				<td>E-mail:</td>
+				<td><input type="email" class="form-control" name="email" ></td>
+		</tr>
+		<tr>
 				<td>Saldo:</td>
 				<td><input type="text" class="form-control" name="saldo" ></td>
 		</tr>
