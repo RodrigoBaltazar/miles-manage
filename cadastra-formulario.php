@@ -5,11 +5,7 @@
 
 
 ?>
-<!-- SERA ALTERADO PARA O FORM DA LOJA -->
-<style type="text/css">
-	body {
-		margin-top: 2cm;
-	}
+
 </style>
 <table class="table">
 	<form method="post" action="cadastrar.php">
