@@ -7,13 +7,27 @@
 ?>
 
 <table class="table table-striped table-bordered">
+	<tr class="table-danger">
+		<td>#</td>
+		<td>Nome:</td>
+		<td>CPF:</td>
+		<td>Endereço:</td>
+		<td>Complemento:</td>
+		<td>Bairro:</td>
+		<td>Cep:</td>
+		<td>Cidade:</td>
+		<td>Telefone:</td>
+		<td>Celular:</td>
+		<td>Saldo de pontos:</td>
+		<td>E-mail:</td>
+	</tr>
 	<?php
 	// Ler do banco e mostrar na tela
 
 	$clientes = listaCliente($conexao);
 	foreach ($clientes as $cliente):
 	 ?>
-	 
+
 	<tr>
 	  <td><?= $cliente['id'] ?></td>
 	  <td><?= $cliente['nome'] ?></td>
