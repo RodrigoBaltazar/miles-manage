@@ -1,3 +1,10 @@
-1-> Simulador- START:19:40 END: -> Total:
+1-> Simulador- START:19:40 END:19:52 -> Total: 12 min
+               START:20:03 END:      -> Total:
 2-> crUd -  START:: - END: -> Total:
 3-> cruD - Start:: - END: -> Total:
+
+
+
+
+A fazer: 27-02-2017
+-> Mudar no banco de dados o saldo de int para float
