@@ -6,7 +6,7 @@
 
 ?>
 
-</style>
+
 <table class="table">
 	<form method="post" action="cadastrar.php">
 		<tr>
