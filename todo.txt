@@ -1,5 +1,5 @@
 1-> Simulador- START:19:40 END:19:52 -> Total: 12 min
-               START:20:03 END:      -> Total:
+               START:20:03 END:21:53 -> Total: 1h 50min
 2-> crUd -  START:: - END: -> Total:
 3-> cruD - Start:: - END: -> Total:
 
