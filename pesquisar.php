@@ -15,11 +15,9 @@
 	</tr>
 		</form>
 </table>
-<h1>Consulta todos clientes:</h1>
-<form action="consulta-todos-clientes.php">
-	<button type="submit" class="btn btn-primary" value="Pesquisar">Consultar</button>
-</form>
- <!-- <table class="table table-striped table-bordered">
+<h1>Clientes:</h1>
+
+  <table class="table table-striped table-bordered">
 	<tr class="table-danger">
 		<td>#</td>
 		<td>Nome:</td>
@@ -33,15 +31,15 @@
 		<td>Celular:</td>
 		<td>Saldo de pontos:</td>
 		<td>E-mail:</td>
-	</tr> -->
+	</tr>
 	 <?php
 	// Ler do banco e mostrar na tela
 
-	 //$clientes = listaCliente($conexao);
-	 //foreach ($clientes as $cliente):
+	 $clientes = pesquisaCliente($conexao, $_GET['nome']);
+	 foreach ($clientes as $cliente):
 	 ?>
 
-	<!-- <tr>
+	 <tr>
 	  <td><?= $cliente['id'] ?></td>
 	  <td><?= $cliente['nome'] ?></td>
 	  <td><?= $cliente['cpf'] ?></td>
@@ -54,10 +52,10 @@
 	  <td><?= $cliente['celular'] ?></td>
 	  <td><?= $cliente['saldo'] ?></td>
 	  <td><?= $cliente['email'] ?></td>
-	</tr> -->
+	</tr>
 
 	<?php
-	  //endforeach
+	  endforeach
 	 ?>
 </table>
 <?php

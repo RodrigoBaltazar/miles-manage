@@ -22,3 +22,13 @@
 		}
 		return $clientes;
 	}
+
+	function pesquisaCliente($conexao, $nome){
+		$clientes = array();
+		$resultado = mysqli_query($conexao, "select * FROM cliente where nome LIKE '%{$nome}%'");
+
+		while($cliente = mysqli_fetch_assoc($resultado)){
+			array_push($clientes, $cliente);
+		}
+		return $clientes;
+	}
