@@ -4,7 +4,7 @@ CREATE DATABASE miles;
 CREATE TABLE cliente (
 id INT(6) NOT NULL PRIMARY KEY,
 nome VARCHAR(200) NOT NULL,
-data_nascimento float NOT NULL,
+data_nascimento float(10) NOT NULL,
 cpf VARCHAR(14) NOT NULL,
 endereco VARCHAR(128),
 complemento VARCHAR(128),
