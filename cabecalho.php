@@ -17,7 +17,7 @@
                     <li><a href="extrato-cliente.php">Extrato</a></li>
                     <li><a href="cadastra-formulario.php">Cadastrar</a></li>
                     <li><a href="simulador.php">Simulador</a></li>
-                    <li><a href="GERAR_ANIVERSARIANTES_MES_PHP_FAZER_ESSE_ARQUIVO.php">Aniversariantes do Mês</a></li>
+                    <li><a href="aniversariantes.php">Aniversariantes do Mês</a></li>
                 </ul>
             </div>
         </div>

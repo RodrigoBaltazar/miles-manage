@@ -6,7 +6,7 @@
 
 ?>
 
-
+</style>
 <table class="table">
 	<form method="post" action="cadastrar.php">
 		<tr>
@@ -51,7 +51,7 @@
 		</tr>
 		<tr>
 				<td>Data de nascimento:</td>
-				<td><input type="text" class="form-control" name="nascimento" ></td>
+				<td><input type="text" class="form-control" name="data_nascimento" ></td>
 		</tr>
 		<tr>
 				<td>E-mail:</td>

@@ -2,15 +2,17 @@
 2-> cruD - Start:: - END: -> Total:
 3-> Search engine - Start:14:02 END:15:09 -> Total:01h:07min
 4-> Página detalhes - Start:: END: -> Total:
-5-> Histórico dos detalhes Start:: END: -> Total:
+5-> Histórico dos detalhes Start:15:38: END: -> Total:
+6-> Aniversariantes do mês Start:: END: -> Total:
 
 
 
 A fazer: 27-02-2017
--> Mudar no banco de dados o saldo de int para float
+-> Mudar no banco de dados o saldo de int para float -> OK
 
 A fazer: 10-03-2017
--> Botão de mostrar todos os resultados de clientes no banco de dados
+-> Botão de mostrar todos os resultados de clientes no banco de dados -> OK
+-> Adicionar data nascimento banco de dados -> ok
 
 
 

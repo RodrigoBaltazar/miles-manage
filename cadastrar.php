@@ -17,13 +17,11 @@ $cidade = $_POST['cidade'];
 $telefone = $_POST['telefone'];
 $celular = $_POST['celular'];
 $saldo = $_POST['saldo'];
-//$nascimento = $_POST['nascimento'];
+$nascimento = $_POST['data_nascimento'];
 $email = $_POST['email'];
 
-//TIREI o $nascimento pois aguardo henry para solucionar problema de como vamos
-//armazenar no banco de dados, pois a estrutura é diferente
 
-if(insereCliente($conexao, $id, $nome, $cpf, $endereco, $complemento, $bairro,
+if(insereCliente($conexao, $id, $nome, $nascimento, $cpf, $endereco, $complemento, $bairro,
 									$cep, $cidade, $telefone, $celular, $saldo, $email)){
 									 	?><br><br><br><p class="text-success">O cliente
 									 	  foi adicionado com sucesso!</p><?php
