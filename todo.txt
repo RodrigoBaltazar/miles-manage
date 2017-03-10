@@ -2,8 +2,17 @@
 2-> cruD - Start:: - END: -> Total:
 3-> Search engine - Start:14:02 END:15:09 -> Total:01h:07min
 4-> Página detalhes - Start:: END: -> Total:
-5-> Histórico dos detalhes Start:15:38: END: -> Total:
-6-> Aniversariantes do mês Start:: END: -> Total:
+5-> Histórico dos detalhes Start:: END: -> Total:
+6-> Aniversariantes do mês Start:15:38 END:16:38 -> Total: 1h:00min
+    -> Selecionar no banco apenas aniversariantes do mês que queremos.
+      -> Algoritmo:
+        -> ir no relógio do pc
+        -> pegar a data
+        -> converter a data para o formato correto
+        -> comparar no php as datas
+        -> extrair do banco
+        
+7-> Index leva para o aniversáriantes do mês Start: 17:01 END:: ->Total:
 
 
 
@@ -15,6 +24,13 @@ A fazer: 10-03-2017
 -> Adicionar data nascimento banco de dados -> ok
 
 
+BUGS:
+
+10-03-2017
+-> Ao pesquisar por Joao ele não encontra, mas temos o João Granja Vargas no banco.
+    -> Devemos fazer uma maneira de ele encontrar.
+
+
 
 
 
@@ -22,3 +38,4 @@ A fazer: 10-03-2017
 Tempo total trabalhado:
 Fevereiro: 12:00 horas de código
 Março: 01:07 horas de código
+       01:00

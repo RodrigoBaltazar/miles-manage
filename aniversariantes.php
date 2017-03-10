@@ -27,14 +27,14 @@
 	 <?php
 	// Ler do banco e mostrar na tela
 
-	 $clientes = listaCliente($conexao);
+	 $clientes = aniversariantesCliente($conexao);
 	 foreach ($clientes as $cliente):
 	 ?>
 
 	<tr>
 	  <td><?= $cliente['id'] ?></td>
 	  <td><?= $cliente['nome'] ?></td>
-    <td><?= $cliente['nascimento'] ?></td>
+    <td><?= $cliente['data_nascimento'] ?></td>
 	  <td><?= $cliente['cpf'] ?></td>
 	  <td><?= $cliente['endereco'] ?></td>
 	  <td><?= $cliente['complemento'] ?></td>
