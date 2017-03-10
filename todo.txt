@@ -1,6 +1,6 @@
 1-> crUd -  Start:: - END: -> Total:
 2-> cruD - Start:: - END: -> Total:
-3-> Search engine - Start:14:02 END: -> Total:
+3-> Search engine - Start:14:02 END:15:09 -> Total:01h:07min
 4-> Página detalhes - Start:: END: -> Total:
 5-> Histórico dos detalhes Start:: END: -> Total:
 
@@ -18,4 +18,5 @@ A fazer: 10-03-2017
 
 
 Tempo total trabalhado:
-Fevereiro: 12 horas de código
+Fevereiro: 12:00 horas de código
+Março: 01:07 horas de código
