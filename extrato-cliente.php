@@ -5,12 +5,12 @@
   include("cliente.php");
 // Fim das inclusões
 ?>
-
-<table>
+<h1>Pesquisar clientes: </h1>
+<table align="center">
 	<tr class="table table-bordered">
 		<form action="pesquisar.php?go" id="pesquisar">
 
-		<td><input type="text" class="form-control" name="nome"></td>
+		<td><input type="text" class="form-control" name="nome" placeholder="Digite o nome:"></td>
 		<td><button type="submit" class="btn btn-primary" value="Pesquisar">Pesquisar</button></td>
 	</tr>
 </table>

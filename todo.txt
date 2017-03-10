@@ -8,3 +8,14 @@
 
 A fazer: 27-02-2017
 -> Mudar no banco de dados o saldo de int para float
+
+A fazer: 10-03-2017
+-> Botão de mostrar todos os resultados de clientes no banco de dados
+
+
+
+
+
+
+Tempo total trabalhado:
+Fevereiro: 12 horas de código
