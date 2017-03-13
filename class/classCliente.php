@@ -93,31 +93,31 @@ function __construct($id, $nome, $data_nascimento, $cpf, $endereco,
       return $this->cidade;
     }
     public function setCidade($cidade){
-      $this->cep = $cidade;
+      $this->cidade = $cidade;
     }
     public function getTelefone(){
       return $this->telefone;
     }
     public function setTelefone($telefone){
-      $this->cep = $telefone;
+      $this->telefone = $telefone;
     }
     public function getCelular(){
       return $this->celular;
     }
     public function setCelular($celular){
-      $this->cep = $celular;
+      $this->celular = $celular;
     }
     public function getSaldo(){
       return $this->saldo;
     }
     public function setSaldo($saldo){
-      $this->cep = $saldo;
+      $this->saldo = $saldo;
     }
     public function getEmail(){
       return $this->email;
     }
     public function setEmail($email){
-      $this->cep = $email;
+      $this->email = $email;
     }
 
 }

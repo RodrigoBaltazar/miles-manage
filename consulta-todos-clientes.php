@@ -34,6 +34,7 @@
 		<td>Celular:</td>
 		<td>Saldo de pontos:</td>
 		<td>E-mail:</td>
+		<td>Detalhes:</td>
 	</tr>
 	 <?php
 	// Ler do banco e mostrar na tela
@@ -56,7 +57,10 @@
 	  <td><?= $cliente->getCelular() ?></td>
 	  <td><?= $cliente->getSaldo() ?></td>
 	  <td><?= $cliente->getEmail() ?></td>
-	</tr> 
+		<td><a class="btn btn-primary" href="cliente-altera-formulario.php?id=<?php echo $cliente->getId()?>">
+		Detalhes</a>
+		</td>
+	</tr>
 
 	<?php
 	  endforeach

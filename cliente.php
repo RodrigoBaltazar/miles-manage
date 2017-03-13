@@ -71,3 +71,89 @@
 		}
 		return $clientes;
 	}
+
+	function alteraCliente($conexao, cliente $cliente){
+
+		$query = "update cliente set nome = '{$cliente->getNome()}', data_nascimento = '{$cliente->getData_nascimento()}', cpf = '{$cliente->getCpf()}', endereco = '{$cliente->getEndereco()}', complemento = '{$cliente->getComplemento()}', bairro = '{$cliente->getBairro()}', cep = '{$cliente->getCep()}', cidade = '{$cliente->getCidade()}', telefone = '{$cliente->getTelefone()}', celular = '{$cliente->getCelular()}',
+																				saldo = '{$cliente->getSaldo()}', email = '{$cliente->getEmail()}' where id = '{$cliente->getId()}'";
+		echo $query;
+	  return mysqli_query($conexao, $query);
+
+	}
+
+	function buscaCliente($conexao, $id){
+		$query = "select * from cliente where id = '{$id}'";
+		$resultado = mysqli_query($conexao, $query);
+
+		$cliente_buscado = mysqli_fetch_assoc($resultado);
+
+			$id = $cliente_buscado['id'];
+			$nome = $cliente_buscado['nome'];
+			$data_nascimento = $cliente_buscado['data_nascimento'];
+			$cpf = $cliente_buscado['cpf'];
+			$endereco = $cliente_buscado['endereco'];
+			$complemento = $cliente_buscado['complemento'];
+			$bairro = $cliente_buscado['bairro'];
+			$cep = $cliente_buscado['cep'];
+			$cidade = $cliente_buscado['cidade'];
+			$telefone = $cliente_buscado['telefone'];
+			$celular = $cliente_buscado['celular'];
+			$saldo = $cliente_buscado['saldo'];
+			$data_nascimento = $cliente_buscado['data_nascimento'];
+			$email = $cliente_buscado['email'];
+
+		// $id = $cliente->getId();
+		// $nome =	$cliente->getNome();
+		// $cpf =	$cliente->getCpf();
+		// $endereco =$cliente->getEndereco();
+		// $complemento =$cliente->getComplemento();
+		// $bairro =$cliente->getBairro();
+		// $cep =	$cliente->getCep();
+		// $cidade =$cliente->getCidade();
+		// $telefone =$cliente->getTelefone();
+		// $celular = $cliente->getCelular();
+		// $saldo = $cliente->getSaldo();
+		// $data_nascimento = $cliente->getData_nascimento();
+		// $email = $cliente->getEmail();
+
+		$cliente = new cliente($id, $nome,$data_nascimento,$cpf,$endereco,
+		$complemento,$bairro,$cep,$cidade,$telefone,$celular,
+		$saldo,$data_nascimento,$email);
+
+		$cliente->setId($cliente_buscado['id']);
+
+		return $cliente;
+	}
+
+	function exibeClienteDetalhe($conexao, $id){
+		$query = "select * from cliente where id = '{$id}'";
+		$resultado = mysqli_query($conexao, $query);
+
+		$cliente_buscado = mysqli_fetch_assoc($resultado);
+
+		$id = $cliente_buscado['id'];
+		$nome = $cliente_buscado['nome'];
+		$data_nascimento = $cliente_buscado['data_nascimento'];
+		$cpf = $cliente_buscado['cpf'];
+		$endereco = $cliente_buscado['endereco'];
+		$complemento = $cliente_buscado['complemento'];
+		$bairro = $cliente_buscado['bairro'];
+		$cep = $cliente_buscado['cep'];
+		$cidade = $cliente_buscado['cidade'];
+		$telefone = $cliente_buscado['telefone'];
+		$celular = $cliente_buscado['celular'];
+		$saldo = $cliente_buscado['saldo'];
+		$data_nascimento = $cliente_buscado['data_nascimento'];
+		$email = $cliente_buscado['email'];
+
+		$cliente = new cliente($id, $nome,$data_nascimento,$cpf,$endereco,
+		$complemento,$bairro,$cep,$cidade,$telefone,$celular,
+		$saldo,$data_nascimento,$email);
+
+		$cliente->setId($cliente_buscado['id']);
+		$cliente->setNome($cliente_buscado['nome']);
+		$cliente->setData_nascimento($cliente_buscado['data_nascimento']);
+		$cliente->setCpf($cliente_buscado['cpf']);
+
+		return $cliente->getNome();
+	}
