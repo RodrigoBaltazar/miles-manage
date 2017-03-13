@@ -10,4 +10,4 @@
 	//     die("Falha na conexão com banco de dados: " . $conn->connect_error);
 	// }
 
-  $conexao = mysqli_connect('localhost', 'root', '', 'miles');
+  $conexao = mysqli_connect('127.0.0.1', 'root', '', 'miles');
