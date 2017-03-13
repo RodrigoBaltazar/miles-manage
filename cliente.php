@@ -4,18 +4,17 @@
 
 	include("conexao.php");
 	require_once("class/classCliente.php");
-	require_once("cadastrar.php");
 
 
-
-
-	function insereCliente($conexao, $cliente){
+	function insereCliente($conexao, cliente $cliente){
 
 
 		$query = "INSERT INTO cliente (id, nome, data_nascimento, cpf, endereco, complemento, bairro, cep, cidade, telefone, celular, saldo, email)
 		VALUES ('{$cliente->getId()}', '{$cliente->getNome()}', '{$cliente->getData_nascimento()}', '{$cliente->getCpf()}', '{$cliente->getEndereco()}', '{$cliente->getComplemento()}', '{$cliente->getBairro()}', '{$cliente->getCep()}', '{$cliente->getCidade()}',
 		 '{$cliente->getTelefone()}', '{$cliente->getCelular()}', '{$cliente->getSaldo()}','{$cliente->getEmail()}')";
+
 		return mysqli_query($conexao, $query);
+
 	}
 
 //lista todos os clientes
@@ -23,7 +22,29 @@
 		$clientes = array();
 		$resultado = mysqli_query($conexao, "select * FROM cliente");
 
-		while($cliente = mysqli_fetch_assoc($resultado)){
+		while($cliente_array = mysqli_fetch_assoc($resultado)){
+
+			$id = $cliente_array['id'];
+			$nome = $cliente_array['nome'];
+			$data_nascimento = $cliente_array['data_nascimento'];
+			$cpf = $cliente_array['cpf'];
+			$endereco = $cliente_array['endereco'];
+			$complemento = $cliente_array['complemento'];
+			$bairro = $cliente_array['bairro'];
+			$cep = $cliente_array['cep'];
+			$cidade = $cliente_array['cidade'];
+			$telefone = $cliente_array['telefone'];
+			$celular = $cliente_array['celular'];
+			$saldo = $cliente_array['saldo'];
+			$data_nascimento = $cliente_array['data_nascimento'];
+			$email = $cliente_array['email'];
+
+			$cliente = new cliente($id,$nome,$data_nascimento,$cpf,$endereco,
+			$complemento,$bairro,$cep,$cidade,$telefone,$celular,
+			$saldo,$data_nascimento,$email);
+
+			//$cliente->setId($cliente_array['id']);
+
 			array_push($clientes, $cliente);
 		}
 		return $clientes;

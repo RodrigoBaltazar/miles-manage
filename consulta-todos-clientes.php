@@ -3,6 +3,8 @@
 	include("cabecalho.php");
 	include("conexao.php");
   include("cliente.php");
+	require_once("class/classCliente.php");
+	//require_once("cadastrar.php");
 // Fim das inclusões
 ?>
 <!-- <h1>Pesquisar clientes: </h1>
@@ -41,20 +43,20 @@
 	 ?>
 
 	<tr>
-	  <td><?= $cliente['id'] ?></td>
-	  <td><?= $cliente['nome'] ?></td>
-    <td><?= $cliente['data_nascimento'] ?></td>
-	  <td><?= $cliente['cpf'] ?></td>
-	  <td><?= $cliente['endereco'] ?></td>
-	  <td><?= $cliente['complemento'] ?></td>
-	  <td><?= $cliente['bairro'] ?></td>
-	  <td><?= $cliente['cep'] ?></td>
-	  <td><?= $cliente['cidade'] ?></td>
-	  <td><?= $cliente['telefone'] ?></td>
-	  <td><?= $cliente['celular'] ?></td>
-	  <td><?= $cliente['saldo'] ?></td>
-	  <td><?= $cliente['email'] ?></td>
-	</tr>
+		<td><?= $cliente->getId() ?></td>
+	  <td><?= $cliente->getNome() ?></td>
+		<td><?= $cliente->getData_nascimento() ?></td>
+	  <td><?= $cliente->getCpf() ?></td>
+	  <td><?= $cliente->getEndereco() ?></td>
+	  <td><?= $cliente->getComplemento() ?></td>
+	  <td><?= $cliente->getBairro() ?></td>
+	  <td><?= $cliente->getCep() ?></td>
+	  <td><?= $cliente->getCidade() ?></td>
+	  <td><?= $cliente->getTelefone() ?></td>
+	  <td><?= $cliente->getCelular() ?></td>
+	  <td><?= $cliente->getSaldo() ?></td>
+	  <td><?= $cliente->getEmail() ?></td>
+	</tr> 
 
 	<?php
 	  endforeach

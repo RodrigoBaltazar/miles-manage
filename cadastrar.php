@@ -1,8 +1,8 @@
 <?php
 
 	include("cabecalho.php");
-	include ("conexao.php");
 	include("cliente.php");
+	include("conexao.php");
 	require_once("class/classCliente.php");
 ?>
 <?php
@@ -24,8 +24,6 @@ $email = $_POST['email'];
 $cliente = new cliente($id, $nome, $data_nascimento, $cpf, $endereco,
                      $complemento, $bairro, $cep, $cidade, $telefone,
                      $celular, $saldo, $email);
-
-
 
 if(insereCliente($conexao, $cliente)){
 											 ?><br><br><br><p class="text-success">O cliente
