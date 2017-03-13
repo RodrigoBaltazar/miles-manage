@@ -19,14 +19,13 @@ $cidade = $_POST['cidade'];
 $telefone = $_POST['telefone'];
 $celular = $_POST['celular'];
 $saldo = $_POST['saldo'];
-$data_nascimento = $_POST['data_nascimento'];
 $email = $_POST['email'];
 
 
 
 $cliente = new cliente($id, $nome,$data_nascimento,$cpf,$endereco,
                       $complemento,$bairro,$cep,$cidade,$telefone,$celular,
-                      $saldo,$data_nascimento,$email);
+                      $saldo,$email);
 $cliente->setId($_POST['id']);
 
 if(alteraCliente($conexao, $cliente)) { ?>
@@ -41,7 +40,6 @@ if(alteraCliente($conexao, $cliente)) { ?>
 ?>
 
 
-?>
 
 
 <?php

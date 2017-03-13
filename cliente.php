@@ -41,7 +41,7 @@
 
 			$cliente = new cliente($id,$nome,$data_nascimento,$cpf,$endereco,
 			$complemento,$bairro,$cep,$cidade,$telefone,$celular,
-			$saldo,$data_nascimento,$email);
+			$saldo,$email);
 
 			//$cliente->setId($cliente_array['id']);
 
