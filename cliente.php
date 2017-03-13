@@ -3,15 +3,18 @@
 	// CRUD
 
 	include("conexao.php");
-	
+	require_once("class/classCliente.php");
+	require_once("cadastrar.php");
 
 
 
-	function insereCliente($conexao, $id, $nome, $nascimento, $cpf, $endereco, $complemento, $bairro, $cep, $cidade, $telefone, $celular, $saldo, $email){
+
+	function insereCliente($conexao, $cliente){
 
 
 		$query = "INSERT INTO cliente (id, nome, data_nascimento, cpf, endereco, complemento, bairro, cep, cidade, telefone, celular, saldo, email)
-		VALUES ('{$id}', '{$nome}', '{$nascimento}', '{$cpf}', '{$endereco}', '{$complemento}', '{$bairro}', '{$cep}', '{$cidade}', '{$telefone}', '{$celular}', '{$saldo}','{$email}')";
+		VALUES ('{$cliente->getId()}', '{$cliente->getNome()}', '{$cliente->getData_nascimento()}', '{$cliente->getCpf()}', '{$cliente->getEndereco()}', '{$cliente->getComplemento()}', '{$cliente->getBairro()}', '{$cliente->getCep()}', '{$cliente->getCidade()}',
+		 '{$cliente->getTelefone()}', '{$cliente->getCelular()}', '{$cliente->getSaldo()}','{$cliente->getEmail()}')";
 		return mysqli_query($conexao, $query);
 	}
 

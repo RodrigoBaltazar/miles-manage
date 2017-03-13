@@ -2,19 +2,37 @@
 
 class cliente {
 
-  private id;
-  private nome;
-  private data_nascimento;
-  private cpf;
-  private endereco;
-  private complemento;
-  private bairro;
-  private cep;
-  private cidade;
-  private telefone;
-  private celular;
-  private saldo;
-  private email;
+  private $id;
+  private $nome;
+  private $data_nascimento;
+  private $cpf;
+  private $endereco;
+  private $complemento;
+  private $bairro;
+  private $cep;
+  private $cidade;
+  private $telefone;
+  private $celular;
+  private $saldo;
+  private $email;
+
+function __construct($id, $nome, $data_nascimento, $cpf, $endereco,
+                     $complemento, $bairro, $cep, $cidade, $telefone,
+                     $celular, $saldo, $email){
+
+          $this->id = $id;
+          $this->nome = $nome;
+          $this->data_nascimento = $data_nascimento;
+          $this->cpf = $cpf;
+          $this->endereco = $endereco;
+          $this->complemento = $complemento;
+          $this->bairro = $bairro;
+          $this->cep = $cep;
+          $this->cidade = $cidade;
+          $this->telefone = $telefone;
+          $this->celular = $celular;
+          $this->saldo = $saldo;
+          $this->email = $email;
 
 }
 
@@ -102,5 +120,5 @@ class cliente {
       $this->cep = $email;
     }
 
-
+}
  ?>

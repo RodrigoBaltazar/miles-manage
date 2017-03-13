@@ -3,6 +3,7 @@
 	include("cabecalho.php");
 	include ("conexao.php");
 	include("cliente.php");
+	require_once("class/classCliente.php");
 ?>
 <?php
 
@@ -17,18 +18,22 @@ $cidade = $_POST['cidade'];
 $telefone = $_POST['telefone'];
 $celular = $_POST['celular'];
 $saldo = $_POST['saldo'];
-$nascimento = $_POST['data_nascimento'];
+$data_nascimento = $_POST['data_nascimento'];
 $email = $_POST['email'];
 
+$cliente = new cliente($id, $nome, $data_nascimento, $cpf, $endereco,
+                     $complemento, $bairro, $cep, $cidade, $telefone,
+                     $celular, $saldo, $email);
 
-if(insereCliente($conexao, $id, $nome, $nascimento, $cpf, $endereco, $complemento, $bairro,
-									$cep, $cidade, $telefone, $celular, $saldo, $email)){
-									 	?><br><br><br><p class="text-success">O cliente
-									 	  foi adicionado com sucesso!</p><?php
+
+
+if(insereCliente($conexao, $cliente)){
+											 ?><br><br><br><p class="text-success">O cliente
+			 						 	  foi adicionado com sucesso!</p><?php
 
 								}else{
 										echo  mysqli_error($conexao); ?>
-										 <br><br><br><p class="text-danger">ERRO no CADASTRO</p><?php
+			 							 <br><br><br><p class="text-danger">ERRO no CADASTRO</p><?php
 									}
 									?>
 
