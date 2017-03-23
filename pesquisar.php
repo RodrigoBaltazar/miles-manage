@@ -50,6 +50,7 @@
 	  <td><?= $cliente['cidade'] ?></td>
 	  <td><?= $cliente['telefone'] ?></td>
 	  <td><?= $cliente['celular'] ?></td>
+		<td><?= $cliente['data_nascimento'] ?></td>
 	  <td><?= $cliente['saldo'] ?></td>
 	  <td><?= $cliente['email'] ?></td>
 	</tr>

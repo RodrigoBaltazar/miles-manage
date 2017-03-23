@@ -62,9 +62,10 @@
 //trabalhar na linha 39 abaixo
 	function aniversariantesCliente($conexao){
 		//pega a data de hoje
-		$data = date("Y-m");
+		$data = date("m");
+		$data_atual = date("Y");
 		$clientes = array();
-		$resultado = mysqli_query($conexao, "select * FROM cliente where data_nascimento between '{$data}-01' and '{$data}-31'");
+		$resultado = mysqli_query($conexao, "select * FROM cliente where data_nascimento between '1900-{$data}-01' and '{$data_atual}-{$data}-31'");
 
 		while($cliente = mysqli_fetch_assoc($resultado)){
 			array_push($clientes, $cliente);
@@ -133,7 +134,7 @@
 
 		$id = $cliente_buscado['id'];
 		$nome = $cliente_buscado['nome'];
-		$data_nascimento = $cliente_buscado['data_nascimento'];
+		//$data_nascimento = $cliente_buscado['data_nascimento'];
 		$cpf = $cliente_buscado['cpf'];
 		$endereco = $cliente_buscado['endereco'];
 		$complemento = $cliente_buscado['complemento'];
@@ -146,7 +147,7 @@
 		$data_nascimento = $cliente_buscado['data_nascimento'];
 		$email = $cliente_buscado['email'];
 
-		$cliente = new cliente($id, $nome,$data_nascimento,$cpf,$endereco,
+		$cliente = new cliente($id, $nome,/*$data_nascimento,*/$cpf,$endereco,
 		$complemento,$bairro,$cep,$cidade,$telefone,$celular,
 		$saldo,$data_nascimento,$email);
 
