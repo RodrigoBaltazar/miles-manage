@@ -13,4 +13,5 @@
 
 Route::get('/clientes', 'ClienteController@lista');
     //return view('welcome');
-    return 'Vamos começar';
+
+Route::get('/clientes/detalhes', 'ClienteController@detalhes');

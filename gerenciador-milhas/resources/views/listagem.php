@@ -1,6 +1,7 @@
 <html>
   <head>
     <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
     <title>Lista de Clientes</title>
   </head>
   <body>
@@ -22,6 +23,9 @@
         <td><?= $c->celular ?></td>
         <td><?= $c->saldo ?></td>
         <td><?= $c->email ?></td>
+        <td><a href="/clientes/detalhes?id=<?= $c->id ?>">
+          <span class="glyphicon glyphicon-search"></span>
+        </td>
       </tr>
       <?php endforeach ?>
     </table>
