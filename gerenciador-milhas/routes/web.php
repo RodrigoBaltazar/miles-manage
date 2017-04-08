@@ -11,7 +11,6 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/produtos', 'ProdutoController@lista');
     //return view('welcome');
     return 'Vamos começar';
-});
