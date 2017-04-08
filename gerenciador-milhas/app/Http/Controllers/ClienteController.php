@@ -13,7 +13,7 @@ class ClienteController extends Controller {
 
 }
       public function detalhes(){
-        $id = Request::input('id');
+        $id = Request::route('id');
 
         $resposta = DB::select('select * from cliente where id = ?', [$id]);
 

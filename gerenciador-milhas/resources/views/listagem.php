@@ -23,7 +23,7 @@
         <td><?= $c->celular ?></td>
         <td><?= $c->saldo ?></td>
         <td><?= $c->email ?></td>
-        <td><a href="/clientes/detalhes?id=<?= $c->id ?>">
+        <td><a href="/clientes/detalhes/<?= $c->id ?>">
           <span class="glyphicon glyphicon-search"></span>
         </td>
       </tr>

@@ -14,4 +14,5 @@
 Route::get('/clientes', 'ClienteController@lista');
     //return view('welcome');
 
-Route::get('/clientes/detalhes', 'ClienteController@detalhes');
+Route::get('/clientes/detalhes/{id}', 'ClienteController@detalhes')
+      ->where('id', '[0-9]+');
