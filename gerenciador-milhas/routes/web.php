@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/produtos', 'ProdutoController@lista');
+Route::get('/clientes', 'ClienteController@lista');
     //return view('welcome');
     return 'Vamos começar';
