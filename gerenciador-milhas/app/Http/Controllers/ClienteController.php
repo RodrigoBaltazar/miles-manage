@@ -9,7 +9,7 @@ class ClienteController extends Controller {
 
       $clientes = DB::select('select * from cliente');
 
-      return view('listagem')->with('clientes', $clientes);
+      return view('clientes.listagem')->with('clientes', $clientes);
 
 }
       public function detalhes(){
@@ -20,7 +20,7 @@ class ClienteController extends Controller {
         if(empty($resposta)){
           return "Esse cliente não existe";
         }
-        return view('detalhes')->with('cliente', $resposta[0]);
+        return view('clientes.detalhes')->with('cliente', $resposta[0]);
 
         }
 }

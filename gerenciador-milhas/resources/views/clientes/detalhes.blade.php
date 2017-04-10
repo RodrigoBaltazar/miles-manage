@@ -1,4 +1,4 @@
-@extends('principal')
+@extends('layout.principal')
 
 @section('conteudo')
   <h1>Nome: {{ $cliente->nome }} </h1>

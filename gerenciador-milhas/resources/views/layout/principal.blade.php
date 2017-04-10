@@ -8,6 +8,11 @@
   <div class="container">
     @yield('conteudo')
 
+
+    <footer class="footer">
+      <p>© Rodrigo de Lemos Baltazar
+    </footer>
+
   </div>
 
 </html>
