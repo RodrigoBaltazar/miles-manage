@@ -4,7 +4,8 @@
 
 <h2>Cadastro de Clientes</h2>
 <table class="table">
-	<form method="get" action="/clientes/adiciona">
+	<form method="post" action="/clientes/adiciona">
+    <input type="hidden" name="_token" value="{{{ csrf_token() }}}"/>
 		<tr>
 				<td>ID:</td>
 				<td><input type="text" class="form-control" name="id" ></td>

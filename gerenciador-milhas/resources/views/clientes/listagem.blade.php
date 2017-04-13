@@ -3,6 +3,12 @@
 @section('conteudo')
     <div class="container">
     <h1>Listagem de clientes</h1>
+    @if(old('nome'))
+    <div class="alert alert-success">
+      <strong>Sucesso!</strong>
+          O cliente {{ old('nome') }} foi adicionado.
+    </div>
+  @endif
     <table class="table table-striped table-bordered table-hover">
       @foreach ($clientes as $c)
       <tr>
@@ -25,5 +31,7 @@
       </tr>
       @endforeach
     </table>
+
+
   </div>
 @stop

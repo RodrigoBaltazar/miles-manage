@@ -48,7 +48,7 @@ class ClienteController extends Controller {
                                                   array($id, $nome, $data_nascimento, $cpf, $endereco,
                                                         $complemento, $bairro, $cep, $cidade, $telefone,
                                                        $celular, $saldo, $email));
-          return view('clientes.adicionado');
+          return redirect('/clientes')->withInput(Request::only('nome'));
 
         }
 }

@@ -4,6 +4,7 @@
 <br>
 <br>
 <br>
-O cliente foi adicionado com sucesso!
-
+<div class="alert alert-success">
+  <strong>Sucesso!</strong> O cliente {{$nome}} foi adicionado com sucesso!
+</div>
 @stop

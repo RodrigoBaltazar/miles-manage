@@ -12,8 +12,8 @@
           </div>
           <div>
               <ul class="nav navbar-nav">
-                  <li><a href="/clientes">Extrato</a></li>
-                  <li><a href="/clientes/novo">Cadastrar</a></li>
+                  <li><a href="<?php echo e(action('ClienteController@lista')); ?>">Extrato</a></li>
+                  <li><a href="<?php echo e(action('ClienteController@novo')); ?>">Cadastrar</a></li>
                   <li><a href="simulador.php">Simulador</a></li>
                   <li><a href="aniversariantes.php">Aniversariantes do Mês</a></li>
               </ul>

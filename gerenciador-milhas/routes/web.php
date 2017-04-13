@@ -19,4 +19,4 @@ Route::get('/clientes/detalhes/{id}', 'ClienteController@detalhes')
 
 Route::get('/clientes/novo', 'ClienteController@novo');
 
-Route::get('/clientes/adiciona','ClienteController@adiciona');
+Route::post('/clientes/adiciona','ClienteController@adiciona');

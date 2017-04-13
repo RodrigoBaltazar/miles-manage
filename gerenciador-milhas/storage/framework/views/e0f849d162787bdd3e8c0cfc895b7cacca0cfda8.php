@@ -1,6 +1,12 @@
 <?php $__env->startSection('conteudo'); ?>
     <div class="container">
     <h1>Listagem de clientes</h1>
+    <?php if(old('nome')): ?>
+    <div class="alert alert-success">
+      <strong>Sucesso!</strong>
+          O cliente <?php echo e(old('nome')); ?> foi adicionado.
+    </div>
+  <?php endif; ?>
     <table class="table table-striped table-bordered table-hover">
       <?php $__currentLoopData = $clientes; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $c): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
       <tr>
@@ -23,6 +29,8 @@
       </tr>
       <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </table>
+
+
   </div>
 <?php $__env->stopSection(); ?>
 
