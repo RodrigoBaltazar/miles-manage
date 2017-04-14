@@ -23,4 +23,4 @@ Route::get('/clientes/novo', 'ClienteController@novo');
 
 Route::post('/clientes/adiciona','ClienteController@adiciona');
 
-Route::get('/simulador', )
+Route::get('/simulador', 'ClienteController@simulador');

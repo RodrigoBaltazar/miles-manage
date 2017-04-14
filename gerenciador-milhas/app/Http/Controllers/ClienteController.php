@@ -66,4 +66,10 @@ class ClienteController extends Controller {
 
 
         }
+
+
+        public function simulador(){
+
+          return view('simulador.simulador');
+        }
 }

@@ -2,6 +2,8 @@
 <head>
   <link href="/css/app.css" rel="stylesheet">
   <link href="/css/bootstrap.css" rel="stylesheet">
+  <script type="text/javascript" src="{{ asset('/public/js/simulador.js') }}"></script>
+
   <title>Detalhe do Cliente</title>
 </head>
 <body>
@@ -14,7 +16,7 @@
               <ul class="nav navbar-nav">
                   <li><a href="{{action('ClienteController@lista')}}">Extrato</a></li>
                   <li><a href="{{action('ClienteController@novo')}}">Cadastrar</a></li>
-                  <li><a href="simulador.php">Simulador</a></li>
+                  <li><a href="{{action('ClienteController@simulador')}}">Simulador</a></li>
                   <li><a href="aniversariantes.php">Aniversariantes do Mês</a></li>
               </ul>
           </div>
@@ -27,6 +29,8 @@
     <br>
     <br>
     @yield('conteudo')
+    <br>
+    <br>
     <br>
     <br>
 
