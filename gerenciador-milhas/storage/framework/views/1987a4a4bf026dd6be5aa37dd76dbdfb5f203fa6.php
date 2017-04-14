@@ -27,11 +27,14 @@
     <br>
     <br>
     <?php echo $__env->yieldContent('conteudo'); ?>
+    <br>
+    <br>
 
 
-    <footer class="footer">
+
+    <!-- <footer class="footer">
       <p>© Rodrigo de Lemos Baltazar
-    </footer>
+    </footer> -->
 
   </div>
 
