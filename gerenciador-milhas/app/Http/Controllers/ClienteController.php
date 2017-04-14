@@ -53,4 +53,17 @@ class ClienteController extends Controller {
           return redirect('/clientes')->withInput(Request::only('nome'));
 
         }
+
+        public function clientePesquisa(){
+
+          $nome = Request::get('nome');
+
+
+          $query = DB::table('cliente')->where('nome', 'LIKE', "%$nome%")->get();
+
+
+          return view('clientes.listagem', ['cliente' => $query]);
+
+
+        }
 }

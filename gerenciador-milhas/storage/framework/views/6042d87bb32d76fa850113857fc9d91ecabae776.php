@@ -8,7 +8,7 @@
     </div>
   <?php endif; ?>
     <table class="table table-striped table-bordered table-hover">
-      <?php $__currentLoopData = $clientes; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $c): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+      <?php $__currentLoopData = $cliente; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $c): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
       <tr>
         <td> <?php echo e($c->id); ?></td>
         <td> <?php echo e($c->nome); ?></td>

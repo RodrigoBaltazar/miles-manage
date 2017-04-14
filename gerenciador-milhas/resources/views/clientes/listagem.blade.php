@@ -10,7 +10,7 @@
     </div>
   @endif
     <table class="table table-striped table-bordered table-hover">
-      @foreach ($clientes as $c)
+      @foreach ($cliente as $c)
       <tr>
         <td> {{ $c->id }}</td>
         <td> {{ $c->nome }}</td>
