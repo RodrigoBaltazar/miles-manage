@@ -7,9 +7,9 @@ class ClienteController extends Controller {
 
     public function lista(){
 //Codigo abaixo funcionando mostrando todos clientes
-      //$clientes = DB::select('select * from cliente');
+      $clientes = DB::select('select * from cliente');
 
-      //return view('clientes.listagem')->with('clientes', $clientes);
+      return view('clientes.listagem')->with('clientes', $clientes);
 //fim comentario
 
     return view('clientes.busca');

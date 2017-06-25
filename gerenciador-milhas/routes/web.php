@@ -11,6 +11,9 @@
 |
 */
 
+//Abrir o site e ir para o lita
+//Route::get('/', 'ClienteController@lista');
+
 Route::get('/clientes', 'ClienteController@lista');
     //return view('welcome');
 

@@ -10,8 +10,25 @@
     </div>
   @endif
     <table class="table table-striped table-bordered table-hover">
-      @foreach ($cliente as $c)
+      @foreach ($clientes as $c)
       <tr>
+        <!-- Descrição do Banco de Dados -->
+        <tr>
+          <td>ID:</td>
+          <td>Nome:</td>
+          <td>Data de Nascimento:</td>
+          <td>CPF:</td>
+          <td>Rua:</td>
+          <td>Complemento:</td>
+          <td>Bairro:</td>
+          <td>cep:</td>
+          <td>Cidade:</td>
+          <td>Telefone:</td>
+          <td>Celular:</td>
+          <td>Saldo:</td>
+          <td>E-mail:</td>
+        </tr>
+        <!-- Descrição do Banco de Dados -->
         <td> {{ $c->id }}</td>
         <td> {{ $c->nome }}</td>
         <td> {{ $c->data_nascimento }}</td>
