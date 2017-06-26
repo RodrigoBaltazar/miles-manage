@@ -1,13 +1,11 @@
-@extends('layout.principal')
-
-@section('conteudo')
+<?php $__env->startSection('conteudo'); ?>
 
 <h2>Cadastro de Clientes</h2>
 
 
 	<table class="table">
 		<form method="post" action="/clientes/adiciona">
-	    <input type="hidden" name="_token" value="{{{ csrf_token() }}}"/>
+	    <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>"/>
 		
 			<tr>
 					<td>ID:</td>
@@ -72,4 +70,6 @@
 
   </div>
 
-@stop
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout.principal', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,4 +1,4 @@
-CREATE DATABASE miles;
+USE miles;
 
 
 CREATE TABLE cliente (
