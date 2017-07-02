@@ -62,7 +62,7 @@ class ClienteController extends Controller {
           $query = DB::table('cliente')->where('nome', 'LIKE', "%$nome%")->get();
 
 
-          return view('clientes.listagem', ['cliente' => $query]);
+          return view('clientes.busca', ['cliente' => $query]);
 
 
         }
