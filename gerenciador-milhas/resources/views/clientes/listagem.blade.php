@@ -10,7 +10,7 @@
     </div>
   @endif
     <table class="table table-striped table-bordered table-hover">
-      @foreach ($clientes as $c)
+
       <tr>
         <!-- Descrição do Banco de Dados -->
         <tr>
@@ -28,6 +28,7 @@
           <td>Saldo:</td>
           <td>E-mail:</td>
         </tr>
+        @foreach ($clientes as $c)
         <!-- Descrição do Banco de Dados -->
         <td> {{ $c->id }}</td>
         <td> {{ $c->nome }}</td>
